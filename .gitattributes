@@ -1,3 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 *.lxlib filter=lfs diff=lfs merge=lfs -text
+*.lxlib linguist-language=Code LX Library
+*.rtk linguist-language=RyTek3
