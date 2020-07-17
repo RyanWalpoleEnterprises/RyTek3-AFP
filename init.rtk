@@ -1,0 +1,40 @@
+var libraries = dir\"lib\";
+new Library.CustomLibraries(libraries, directory);
+
+including RWE.Softworks.ApplicationFrameworkPatch;
+including RWE.Sofworks.Windows10EditFrameworkData;
+
+This.Application.onCalled{
+
+    using ApplicationFrameworkPatch, ApplicationFrameworkPatch.doActivity(findInstallDir){
+        wfs_locate();
+        rytek3location = wfs_locate.ToString();
+        RyTek3DIR = "C:\Program Files (x86)\RWE\RyTek\";
+        Windows10EditFrameworkData.doActivity(Patch(Check));
+    }
+}
+
+using Windows10EditFrameworkData, Windows10EditFrameworkData.doActivity(Patch(Check)){
+    AppFrameworkPatch.PatchTarget = rytek3location;
+    
+    if(!rytek3location.Exists){
+        Windows10EditFrameworkData.CreateDirectory(RyTek3DIR)
+        rytek3location = RyTek3DIR;
+        ApplicationFrameworkPatch.doActivity(Patch);
+    }
+    else if(rytek3location.Exists){
+        ApplicationFrameworkPatch.doActivity(Patch);
+    }
+}
+
+using ApplicationFrameworkPatch, ApplicationFrameworkPatch.doActivity(Patch()){
+    ApplicationFrameworkPatch.ApplyPatch();
+    on ApplicationFrameworkPatch.ApplyPatch(CompletedEvent){
+        AFPCompletionStatus = true;
+        SuspendActivity();
+    }
+}
+
+SuspendActivity(){
+    afpcontainerapplication.Alert();
+}
