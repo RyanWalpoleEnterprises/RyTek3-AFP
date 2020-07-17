@@ -1,7 +1,8 @@
 # RyTek3
 ## Application Framework Patch
 
-! [RyTek3] (https://ryanwalpole.com/wp-content/uploads/2019/11/Picture1.png)
+<img src="https://ryanwalpole.com/wp-content/uploads/2019/11/Picture1.png"/>
+
  The RyTek3 application framework reached end of life support in January 2017, however many applications were built on this framework that are closed source and have not been updated since. In 2020, apps on Windows 10 running the RyTek3 framework stopped working due to an issue caused by updates made to Windows. This application framework patch is designed to fix that issue and allow those broken applications to still function.
 
  ### Important!
