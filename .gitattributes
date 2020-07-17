@@ -2,4 +2,5 @@
 * text=auto
 *.lxlib filter=lfs diff=lfs merge=lfs -text
 *.lxlib linguist-language=Code LX Library
-*.rtk linguist-language=RyTek
+*.rtk linguist-language=RyTek Executable
+*.rtkf linguist-language=RyTek Framework
