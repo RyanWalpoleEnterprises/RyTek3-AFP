@@ -50,6 +50,7 @@ Source: "C:\repo\RTK3-AFP\RyTek3-Application-Framework-Patch\resx\afp.ico"; Dest
 Source: "C:\repo\RTK3-AFP\RyTek3-Application-Framework-Patch\resx\afp.png"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\repo\RTK3-AFP\RyTek3-Application-Framework-Patch\resx\application.ico"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\repo\RTK3-AFP\RyTek3-Application-Framework-Patch\resx\application.png"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\repo\RTK3-AFP\RyTek3-Application-Framework-Patch\application.bat";  DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
