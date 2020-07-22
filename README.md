@@ -36,7 +36,8 @@
 - RWE Softworks is the open source project subsidiary of Ryan Walplole Enterprises. [[Learn More]](http://www.ryanwalpole.com/softworks)
 
 ### Changelogs
-Changelogs are available on [the RWE Website](https://ryanwalpole.com/en-au/changelog/rytek3-afp/all)
+Changelogs are available on [the RWE Website](https://ryanwalpole.com/en-au/changelog/rytek3-afp/all#).
+You can add the release ID after the # for changelogs pertaining to that particular release. For example: [/all#1.0.1-R_200702](https://ryanwalpole.com/en-au/changelog/rytek3-afp/all##1.0.1-R_200702) for release version 1.0.1-R_200702.
 
 ### License
 Please familiarise yourself with the license included in this project repository. or during the setup process.
