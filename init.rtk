@@ -3,6 +3,8 @@ new Library.CustomLibraries(libraries, directory);
 
 including RWE.Softworks.ApplicationFrameworkPatch;
 including RWE.Sofworks.Windows10EditFrameworkData;
+including Microsoft.Windows32.RyTekCore;
+including Microsoft.Windows64.RyTekCore
 
 This.Application.onCalled{
 
@@ -37,4 +39,14 @@ using ApplicationFrameworkPatch, ApplicationFrameworkPatch.doActivity(Patch()){
 
 SuspendActivity(){
     afpcontainerapplication.Alert();
+}
+
+using Microsoft.Windows32.RyTekCore, Microsoft.Windows64.RyTekCore, TestApplicationLaunch.doActivity(run){
+    testapplicationlocation = "C:\Program Files (x86)\RWE\RyTek\AFP\test-application\demo.exe";
+    offer(ButtonTest){
+        .doActivity(Click){
+                    process.Start(testapplicationlocation);
+        }
+    }
+    SuspendActivity();
 }
