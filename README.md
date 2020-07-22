@@ -35,5 +35,8 @@
 - Ryan Walpole Enterprises is the developer of RyTek3. [[Learn More]](http://www.ryanwalpole.com)
 - RWE Softworks is the open source project subsidiary of Ryan Walplole Enterprises. [[Learn More]](http://www.ryanwalpole.com/softworks)
 
+### Changelogs
+Changelogs are available on [the RWE Website](https://ryanwalpole.com/en-au/changelog/rytek3-afp/all)
+
 ### License
 Please familiarise yourself with the license included in this project repository. or during the setup process.
