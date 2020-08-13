@@ -1,1 +1,24 @@
+//LX Library//
+//Version: 1.0.0 (200801)
+//Developer: Ryan Walpole, RWE Softworks, Ryan Walpole Enterprises
+//LXLID: RWE.Softworks.AFP.KB4565351
 
+new Activity PatchActivityKB4565351 = new .doActivity()
+
+Activity.Add(Patch64){
+  using CodeLX.Windows.System.IO.Compression,
+  using CodeLX.Windows.System.IO.SpecialAccessLocations,
+  
+  string Patch64RTK = [MainDIR]"\patchdata\64bitKB4565351.rtk";
+  string PatchXSC = [LXLIBLOC]
+  file.Copy(Patch64RTK, PatchXSC);
+}
+
+Activity.Add(Patch32){
+  using CodeLX.Windows.System.IO.Compression,
+    using CodeLX.Windows.System.IO.SpecialAccessLocations,
+
+    string Patch32RTK = [MainDIR]"\patchdata\32bitKB4565351.rtk";
+    string PatchXSC32 = [LXLIBLOC]
+    file.Copy(Patch32RTK, PatchXSC32);
+}
