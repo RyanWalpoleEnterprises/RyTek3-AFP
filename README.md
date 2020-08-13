@@ -7,6 +7,9 @@
 
  ### Important!
  The RyTek3 platform was discontinued in 2017 with the last security patches being released by Ryan Walpole Enterprises in 2018. Software that uses the RyTek3 framework may be susceptible to malicious content and may not be secure to use. Please keep this in mind while using this framework patch.
+ 
+ #### Latest Windows Update
+ If you're using the latest security patch by Microsoft on your Windows 10 device, there is a chance that this has further broken the framework. Please be aware that if you're running the absolute latest in updates, you may have a different experience with the Application Framework Patch. For example, Windows 10 patch update KB4565351 was released on August 11 and broke several libraries. This may happen or not happen with any number of updates made by Microsoft. We do not guarantee that we will continue patching each security update if they are frequent.
 
 ### Use case scenario
 - You use a program that takes advantage of the RyTek Framework that has not been updated in some time. This software is important to your workflow and you need to use it.
