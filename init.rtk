@@ -4,7 +4,8 @@ new Library.CustomLibraries(libraries, directory);
 including RWE.Softworks.ApplicationFrameworkPatch;
 including RWE.Sofworks.Windows10EditFrameworkData;
 including Microsoft.Windows32.RyTekCore;
-including Microsoft.Windows64.RyTekCore
+including Microsoft.Windows64.RyTekCore;
+including RWE.Softworks.AFP.KB4565351;
 
 This.Application.onCalled{
 
@@ -23,9 +24,22 @@ using Windows10EditFrameworkData, Windows10EditFrameworkData.doActivity(Patch(Ch
         Windows10EditFrameworkData.CreateDirectory(RyTek3DIR)
         rytek3location = RyTek3DIR;
         ApplicationFrameworkPatch.doActivity(Patch);
+        if(Microsoft.Windows64.RyTekCore.WindowsVersion.PatchLevel >= "KB4565351"){
+            RWE.Softworks.AFP.KB4565351.doActivity(Patch64);
+        }
+        else if(Microsoft.Windows32.RyTekCore.WindowsVersion.PatchLevel >= "KB4565351"){
+            RWE.Softworks.AFP.KB4565351.doActivity(Patch32);
+        }
     }
     else if(rytek3location.Exists){
         ApplicationFrameworkPatch.doActivity(Patch);
+        
+        if(Microsoft.Windows64.RyTekCore.WindowsVersion.PatchLevel >= "KB4565351"){
+            RWE.Softworks.AFP.KB4565351.doActivity(Patch64);
+        }
+        else if(Microsoft.Windows32.RyTekCore.WindowsVersion.PatchLevel >= "KB4565351"){
+            RWE.Softworks.AFP.KB4565351.doActivity(Patch32);
+        }
     }
 }
 
